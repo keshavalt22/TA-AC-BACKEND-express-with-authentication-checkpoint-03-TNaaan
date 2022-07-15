@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Expense Tracker</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <div class="container">
+      <header class="flex">
+        <div>
+          <a href="/" class="brand">Expense Tracker</a>
+        </div>
+        <div>
+            <a href="/">
+                <button class="btn-blue">Back</button>
+            </a>
+        </div>
+      </header>
+      <main>
+        <form action="/client/expense" method="post" class="form">
+          <input type="text" name="expname" placeholder="Add Expense">
+          <input type="text" name="category" placeholder="Add Category">
+          <input type="number" name="amount" placeholder="Add Amount">
+          <input type="date" name="date" placeholder="Enter Date">
+          <div class="text-center">
+            <button type="submit" class=" btn btn-blue">Add Expense Details</button>
+          </div>
+        </form>
+      </main>
+      <footer class="nav">
+        <small>&copy; AltCampus</small>
+    </footer>
+    </div>
+  </body>
+</html>
