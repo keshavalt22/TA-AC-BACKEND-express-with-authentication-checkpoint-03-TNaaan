@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expense Tracker</title>
+  <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+    <header class="container">
+      <h2 class="heading">Welcome to Expense Tracker App</h2>
+      <% if(user) { %>
+        <div class="nav">
+          <a href="/">
+            <button class="btn-blue btn">Income and Expense Details</button>
+          </a>
+          <a href="/users/logout">
+            <button class="btn-red btn">LogOut</button>
+          </a>
+        </div>
+      <% } else { %>
+        <div class="nav">
+          <a href="/auth/google">
+            <button class="btn-coral btn">Login with Google</button>
+          </a> 
+          <a href="/auth/github">
+            <button class="btn-blue btn">Login with Github</button>
+          </a>
+          <a href="/users/login">
+            <button class="btn-red btn">Login</button>
+          </a>
+          <a href="/users/register">
+            <button class="btn-green btn">Register</button>
+          </a>
+        </div>
+      <% } %>
+           
+    </header>
+</body>
+</html>
